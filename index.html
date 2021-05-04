@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/app/assets/img/icon.png" />
+    <title>Rickpedia</title>
+    
+	<!-- Bootstrap, jQuery and Popper CSS and JS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<!-- bootbox -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+	<!-- custom CSS -->
+	<link href="app/assets/css/style.css" rel="stylesheet" />
+	<!-- custom JS -->
+	<script src="app/assets/js/scripts.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+			<div class="container">
+			    <a class="navbar-brand" href="/">
+			  	  <img width="96" height="96" src="/app/assets/img/icon.png" class="img-fluid" alt="Rickpedia">
+			  	</a>
+			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			    	<span class="navbar-toggler-icon"></span>
+			  	</button>
+			  	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			    	<div class="navbar-nav">
+			      		<a class="nav-item nav-link read-characters-btn">Personagens</a>
+			      		<a class="nav-item nav-link display-search-form-btn">Buscar personagens</a>
+			      		<a class="nav-item nav-link read-locations-btn">Localizações</a>
+			      		<a class="nav-item nav-link read-episodes-btn">Episódios</a>
+			    	</div>
+			  	</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div id="app"></div>
+	</main>
+	<footer class="footer bg-dark text-center text-white">
+      <div class="container">
+        <span class="text-muted">Rickpedia <i>by</i> João Victor Valentim</span>
+      </div>
+    </footer>
+	<script src="app/app.js"></script>
+	<script src="app/character/characters.js"></script>
+	<script src="app/character/read-characters.js"></script>
+	<script src="app/character/read-one-character.js"></script>
+	<script src="app/character/search-characters-form.js"></script>
+
+	<script src="app/location/locations.js"></script>
+	<script src="app/location/read-locations.js"></script>
+	<script src="app/location/read-one-location.js"></script>
+
+	<script src="app/episode/episodes.js"></script>
+	<script src="app/episode/read-episodes.js"></script>
+	<script src="app/episode/read-one-episode.js"></script>
+</body>
+</html>
